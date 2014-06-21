@@ -23,6 +23,7 @@
 *public
 *sass-cache
 /.sass-cache
+dist
 
 # Logs and databases #
 ######################

@@ -3070,8 +3070,31 @@ object {
   margin-top: 0;
 }
 
-.splash {
+header {
   padding: 10em 0 0 0;
+  text-align: center;
+}
+header img {
+  width: 146px;
+  height: 130px;
+}
+header.small {
+  position: relative;
+  width: 96%;
+  height: 90px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header.small img {
+  position: absolute;
+  padding: 0;
+  width: 80px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+}
+
+.frame-content {
   text-align: center;
 }
 

@@ -21,8 +21,16 @@
 
 var paths = {
     test: {
-      src : ['test/vendor/angular.js', 'test/vendor/angular-mocks.js',
-      'app/scripts/*.js','test/unit/*spec.js']
+      src : [
+        'test/vendor/angular.js',
+        'test/vendor/angular-mocks.js',
+        'test/vendor/*.js',
+        'app/scripts/vendor/**/*.js',
+        'app/scripts/app.js',
+        'app/scripts/services/**/*.js',
+        'app/scripts/**/*.js',
+        'test/unit/**/*.spec.js'
+      ]
     }
 };
 
@@ -38,7 +46,7 @@ var karma = require('gulp-karma');
 
 // Lint JavaScript
 gulp.task('jshint', function () {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src(['app/scripts/**/*.js', '!app/scripts/vendor/**/*.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.jshint.reporter('fail'))

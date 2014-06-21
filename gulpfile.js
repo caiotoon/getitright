@@ -19,6 +19,13 @@
 
 'use strict';
 
+var paths = {
+    test: {
+      src : ['test/vendor/angular.js', 'test/vendor/angular-mocks.js',
+      'app/scripts/*.js','test/unit/*spec.js']
+    }
+};
+
 // Include Gulp & Tools We'll Use
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
@@ -27,6 +34,7 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var karma = require('gulp-karma');
 
 // Lint JavaScript
 gulp.task('jshint', function () {
@@ -146,3 +154,26 @@ gulp.task('pagespeed', pagespeed.bind(null, {
   url: 'https://example.com',
   strategy: 'mobile'
 }));
+
+//Test
+gulp.task('test', function() {
+  return gulp.src(paths.test.src)
+    .pipe(karma({
+      configFile: 'karma.conf.js',
+      action: 'run'
+    }))
+    .on('error', function(err) {
+      throw err;
+    });
+});
+
+gulp.task('tdd', function() {
+  return gulp.src(paths.test.src)
+    .pipe(karma({
+      configFile: 'karma.conf.js',
+      action: 'watch'
+    }))
+    .on('error', function(err) {
+      throw err;
+    });
+});

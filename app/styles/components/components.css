@@ -3,7 +3,7 @@
 * Main Stylesheet For Visual Style Guide
 *
 **/
-@import url("//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,900");
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,500);
 /**
 *
 * Utils
@@ -407,6 +407,7 @@ body {
   /* 26px */
   font-weight: 300;
   color: #404040;
+  background-color: #e74c3c;
   position: relative;
 }
 body:after {
@@ -3029,6 +3030,10 @@ object {
   margin-top: 0;
 }
 
+.splash {
+  background-color: #e74c3c;
+}
+
 /**
 *
 * Helper
@@ -3048,7 +3053,7 @@ object {
 }
 
 .color--red {
-  color: #cb4437;
+  color: #e74c3c;
 }
 
 .color--green {
@@ -3064,7 +3069,7 @@ object {
 }
 
 .color--red-secondary {
-  color: #ebb6b0;
+  color: #f8c9c4;
 }
 
 .color--green-secondary {
@@ -3104,7 +3109,7 @@ object {
 }
 
 .color--danger {
-  color: #cb4437;
+  color: #e74c3c;
 }
 
 .color--muted {

@@ -1983,7 +1983,7 @@ li > p {
 * Button
 *
 **/
-.button, .button--primary, .button--secondary, .button--secondary-variation {
+.button, .button--primary, .button--secondary, .button--secondary-variation, .submit {
   display: inline-block;
   padding: 12px 32px;
   margin-bottom: 13px;
@@ -1996,7 +1996,7 @@ li > p {
   outline: 0;
   transition: none;
 }
-.button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover {
+.button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover, .submit:hover {
   background: #4d4d4d;
   color: #ffffff;
   border: 1px solid #4d4d4d;
@@ -2020,6 +2020,22 @@ li > p {
   color: #3372df;
   border: 1px solid #e6e6e6;
   border-color: transparent;
+}
+
+.submit {
+  border: 3px solid #ffcf0f;
+  background: none;
+  text-transform: uppercase;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffcf0f;
+  transition: all 0.2s ease-in;
+}
+.submit:hover {
+  background: #ffcf0f;
+  color: #e74c3c;
+  border: 3px solid #ffcf0f;
 }
 
 /**
@@ -3085,7 +3101,7 @@ object {
 }
 
 .color--yellow {
-  color: #f4b400;
+  color: #ffcf0f;
 }
 
 .color--blue-secondary {
@@ -3101,7 +3117,7 @@ object {
 }
 
 .color--yellow-secondary {
-  color: #ffd45b;
+  color: #ffe375;
 }
 
 .color--gray-background {
@@ -3129,7 +3145,7 @@ object {
 }
 
 .color--warning {
-  color: #ffd45b;
+  color: #ffe375;
 }
 
 .color--danger {

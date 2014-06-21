@@ -54,3 +54,22 @@
   @extend .button;
   @include style-button(#ffffff, $colorBlue, true);
 }
+
+.submit {
+  @extend .button;
+  margin: $m-top-20;
+  border: 3px solid $colorYellow;
+  background: none;
+  text-transform: uppercase;
+  font-family: $fontDefault;
+  font-size: $fontBase;
+  font-weight: 500;
+  color: $colorYellow;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background: $colorYellow;
+    color: $colorRed;
+    border: 3px solid $colorYellow;
+  }
+}

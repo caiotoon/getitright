@@ -26,20 +26,21 @@
   $colorBlueSecondary: lighten($colorBlue, 30%) !default;
   $colorGreen: #0f9d58 !default;
   $colorGreenSecondary: lighten($colorGreen, 30%) !default;
-  $colorRed: #cb4437 !default;
+  $colorRed: #E74C3C !default;
   $colorRedSecondary: lighten($colorRed, 30%) !default;
-  $colorYellow: #f4b400 !default;
+  $colorYellow: #FFCF0F !default;
   $colorYellowSecondary: lighten($colorYellow, 20%) !default;
 
   $colorRemember: #09829a !default;
   $colorLearning: #da2e75 !default;
 
+  $colorWhite: #FFF;
   $colorGrayBackground: #f0f0f0 !default;
   $colorGrayKeyline: #e0e0e0 !default;
   $colorGray: #737373 !default;
   $colorGrayDark: #404040 !default;
 
-  $colorText: $colorGrayDark !default;
+  $colorText: $colorWhite !default;
   $colorHighlight: $colorBlue !default;
   $colorWarning: $colorYellowSecondary !default;
   $colorMuted: $colorGray !default;
@@ -55,8 +56,8 @@
   $colorPerformanceSecondary: lighten($colorPerformance, 30%) !default;
 
   // Defining font family
-  $fontDefault: Helvetica, Arial, sans-serif !default;
-  $fontHighlight: "Roboto Condensed", Helvetica, sans-serif !default;
+  $fontDefault: Helvetica Neue, Arial, sans-serif !default;
+  $fontHighlight: 'Fira Sans', sans-serif;
   $fontIcon: "icons" !default;
 
   // Defining font sizes
@@ -76,6 +77,9 @@
 
   // Defining sidebar stuff
   $sidebarWidth: 280px !default;
+
+  //Padding/Margin
+  $m-top-20: 1.75em 0 0 0;
 
 
 /*==========  FUNCTIONS  ==========*/
@@ -211,10 +215,18 @@
     padding-bottom: 0;
   }
 
-  @mixin rule--base {
+  @mixin rule--base-flat {
     font-size: $fontBase;
     line-height: 1.6250em; /* 26px */
-    padding-top: 1.6250em;
+    padding-bottom: 30px;
+  }
+
+  @mixin rule--base {
+    font-family: $fontDefault;
+    font-weight: 500;
+    font-size: $fontBase;
+    line-height: 1.6250em; /* 26px */
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -267,6 +279,10 @@
   // Mixins to determine which rule to use at which breakpoint
   @mixin type--small($isFromMixin: false) {
     @include rule--small;
+  }
+
+  @mixin type--base-flat($isFromMixin: false) {
+    @include rule--base-flat;
   }
 
   @mixin type--base($isFromMixin: false) {

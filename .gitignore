@@ -21,8 +21,8 @@
 *.zip
 *node_modules
 *public
-**/.sass-cache
-**/.sass-cache/*
+*sass-cache
+/.sass-cache
 
 # Logs and databases #
 ######################

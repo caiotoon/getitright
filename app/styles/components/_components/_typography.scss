@@ -50,3 +50,7 @@ h1 {
 li > p {
   padding-top: 0;
 }
+
+.subheadline {
+  @include type--base-flat;
+}

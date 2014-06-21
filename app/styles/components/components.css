@@ -401,12 +401,12 @@ html, body, button {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
   font-weight: 300;
-  color: #404040;
+  color: white;
   background-color: #e74c3c;
   position: relative;
 }
@@ -759,7 +759,7 @@ pre {
 }
 
 .highlight-module__title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 68px;
   font-weight: 300;
   line-height: 1.1471em;
@@ -770,7 +770,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 110px;
     font-weight: 300;
     line-height: 1.19em;
@@ -781,7 +781,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -792,7 +792,7 @@ pre {
 }
 @media only screen and (min-width: 800px) and (min-width: 800px) {
   .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -887,7 +887,7 @@ pre {
 
 /*==========  INLINE  ==========*/
 .highlight-module--inline {
-  color: #404040;
+  color: white;
   overflow: visible;
   margin: 26px 0 0;
 }
@@ -916,7 +916,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .highlight-module--inline .highlight-module__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 26px;
     font-weight: 300;
     line-height: 1.0000em;
@@ -974,7 +974,7 @@ pre {
   /* 26px */
   padding-top: 1.3000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .editorial-header .tag {
@@ -982,7 +982,7 @@ pre {
 }
 
 .editorial-header__subtitle {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.2381em;
@@ -994,7 +994,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .editorial-header__subtitle {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -1023,7 +1023,7 @@ pre {
 }
 
 .editorial-header__toc-title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 13px;
   padding-bottom: 13px !important;
@@ -1075,7 +1075,7 @@ pre {
 }
 
 .related-guides__title {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 26px;
   font-weight: 300;
   line-height: 1.0000em;
@@ -1086,7 +1086,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .related-guides__title {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -1126,7 +1126,7 @@ pre {
   /* 26px */
   padding-top: 1.3000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin-bottom: 26px;
 }
 
@@ -1142,7 +1142,7 @@ pre {
 
 .articles-count {
   color: #3372df;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin-top: -52px;
   font-weight: 400;
 }
@@ -1264,11 +1264,13 @@ pre {
 **/
 .quote__content {
   position: relative;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
   padding-top: 104px;
   padding-left: 26px;
@@ -1300,7 +1302,7 @@ pre {
   content: open-quote;
   display: block;
   position: absolute;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   color: #f0f0f0;
   top: 90px;
@@ -1342,7 +1344,7 @@ pre {
 .article-nav-link:before {
   position: absolute;
   top: 21px;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -1396,7 +1398,7 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .article-nav-count {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 26px;
     font-weight: 300;
     line-height: 1.0000em;
@@ -1477,12 +1479,14 @@ pre {
 *
 **/
 .toc__title {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   padding-bottom: 13px;
   margin-bottom: 12px;
   border-bottom: 1px solid #e0e0e0;
@@ -1548,7 +1552,7 @@ pre {
 @media only screen and (min-width: 620px) {
   .next-lessons:before {
     content: attr(data-current-lesson);
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
@@ -1843,19 +1847,23 @@ small {
 p,
 ul,
 ol {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
 }
 
 .medium,
 h4 {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -1882,7 +1890,7 @@ h3 {
 @media only screen and (min-width: 800px) {
   .large,
   h3 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 26px;
     font-weight: 300;
     line-height: 1.0000em;
@@ -1894,7 +1902,7 @@ h3 {
 
 .xlarge,
 h2 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 26px;
   font-weight: 300;
   line-height: 1.0000em;
@@ -1905,7 +1913,7 @@ h2 {
 @media only screen and (min-width: 800px) {
   .xlarge,
   h2 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2381em;
@@ -1917,7 +1925,7 @@ h2 {
 
 .xxlarge,
 h1 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.2381em;
@@ -1928,7 +1936,7 @@ h1 {
 @media only screen and (min-width: 800px) {
   .xxlarge,
   h1 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -1939,7 +1947,7 @@ h1 {
 }
 
 .huge {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 68px;
   font-weight: 300;
   line-height: 1.1471em;
@@ -1949,7 +1957,7 @@ h1 {
 }
 @media only screen and (min-width: 800px) {
   .huge {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 110px;
     font-weight: 300;
     line-height: 1.19em;
@@ -1961,6 +1969,13 @@ h1 {
 
 li > p {
   padding-top: 0;
+}
+
+.subheadline {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-bottom: 30px;
 }
 
 /**
@@ -1975,7 +1990,7 @@ li > p {
   margin-top: 13px;
   min-height: 26px;
   text-align: center;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 600;
   text-decoration: none;
   outline: 0;
@@ -2089,7 +2104,7 @@ ul.list-links a:before {
 }
 ul.list-links.list-links--primary a {
   font-weight: 400;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 1;
   text-decoration: none;
 }
@@ -2128,10 +2143,12 @@ ol.list-links.list-links--secondary a:before {
 }
 
 .list-links--secondary {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
 }
@@ -2144,10 +2161,12 @@ ol.list-links.list-links--secondary a:before {
   padding-left: 0;
 }
 .list-anchor li {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
   padding-top: 0;
   padding-left: 0;
@@ -2260,7 +2279,7 @@ ol.list-links.list-links--secondary a:before {
 
 /*==========  RELATED GUIDES LIST  ==========*/
 .related-guides-list {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   padding-top: 0;
   padding-left: 0;
 }
@@ -2369,7 +2388,7 @@ a:hover {
 }
 
 .cta--primary {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: #3372df;
   font-weight: 400;
   display: inline-block;
@@ -2389,7 +2408,7 @@ a:hover {
 }
 
 .cta--secondary {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: #3372df;
   font-weight: 400;
   display: inline-block;
@@ -2415,11 +2434,13 @@ table thead {
 table th {
   text-align: center;
   display: none;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -2457,7 +2478,7 @@ table td:before {
   bottom: 0;
   width: 100px;
   max-height: 100%;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding-left: 13px;
@@ -2625,10 +2646,12 @@ object {
 }
 
 .subsection-number {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6250em;
   /* 26px */
-  padding-top: 1.6250em;
+  padding-top: 0;
   padding-bottom: 0;
   padding-top: 0;
   display: block;
@@ -2787,7 +2810,7 @@ object {
 }
 .icon-circle span,
 .icon-circle--large span {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
@@ -3030,6 +3053,11 @@ object {
   margin-top: 0;
 }
 
+.splash {
+  padding: 4em 0 0 0;
+  text-align: center;
+}
+
 /**
 *
 * Helper
@@ -3093,7 +3121,7 @@ object {
 }
 
 .color--text {
-  color: #404040;
+  color: white;
 }
 
 .color--highlight {
@@ -3198,7 +3226,7 @@ object {
   /* 26px */
   padding-top: 2.0000em;
   padding-bottom: 0;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;

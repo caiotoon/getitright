@@ -57,7 +57,7 @@
 
 .submit {
   @extend .button;
-
+  margin: $m-top-20;
   border: 3px solid $colorYellow;
   background: none;
   text-transform: uppercase;

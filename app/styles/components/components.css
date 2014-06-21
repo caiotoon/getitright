@@ -2023,6 +2023,7 @@ li > p {
 }
 
 .submit {
+  margin: 1.75em 0 0 0;
   border: 3px solid #ffcf0f;
   background: none;
   text-transform: uppercase;
@@ -3070,7 +3071,7 @@ object {
 }
 
 .splash {
-  padding: 4em 0 0 0;
+  padding: 10em 0 0 0;
   text-align: center;
 }
 

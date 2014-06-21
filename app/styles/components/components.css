@@ -3077,7 +3077,6 @@ header {
 header img {
   width: 146px;
   height: 130px;
-  transition: all 0.2s ease-in;
 }
 header.small {
   position: relative;

@@ -3336,6 +3336,14 @@ input.large {
   opacity: 1;
 }
 
+ins {
+  background: rgba(0, 255, 0, 0.4);
+}
+
+del {
+  background: rgba(255, 0, 0, 0.4);
+}
+
 /**
 *
 * Helper

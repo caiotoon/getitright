@@ -2,7 +2,7 @@ angular.module('getitright')
   .directive('mapContainer', function() {
     return {
       restrict: 'E',
-      template: '<div class="map-container"><h4>Check who else is getting it right around the world</h4><div class="arrow"></div><div class="map-placeholder"></div></div>',
+      template: '<div class="map-container"><h4 class="intro">Take a look at who is getting it right, all around the world.</h4><img class="arrow" src="images/icons/icn-arrow.svg"/><div class="map-placeholder"></div></div>',
       link: function(scope, element, attrs) {
         var w = $(window),
             arrow = element.find('.arrow').delay(200).fadeIn(),

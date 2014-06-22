@@ -5,8 +5,11 @@ angular.module('getitright')
 
   .config(function($routeProvider, $locationProvider) {
     $routeProvider
-     .when('/enter', {
+    .when('/enter', {
       templateUrl: 'templates/enter.html'
+    })
+    .when('/record', {
+      templateUrl: 'templates/record.html'
     })
     .otherwise({
       templateUrl: 'templates/intro.html'

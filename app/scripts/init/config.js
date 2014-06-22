@@ -11,6 +11,9 @@ angular.module('getitright')
     .when('/record', {
       templateUrl: 'templates/record.html'
     })
+    .when('/result', {
+      templateUrl: 'templates/result.html'
+    })
     .otherwise({
       templateUrl: 'templates/intro.html'
     });

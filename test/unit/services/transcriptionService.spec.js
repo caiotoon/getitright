@@ -18,12 +18,19 @@ describe('trascriptionService', function() {
   describe('speech Recognition Engine is Available', function() {
     var mockEngine = {
           start: jasmine.createSpy('start').andCallFake(function() {
-            this.onresult({ results: [[ { transcript: mockResults } ]] });
-            this.onend();
+            executeOnStart && this.onstart();
+            executeOnResult && this.onresult({ results: [[ { transcript: mockResults } ]] });
+            executeOnEnd && this.onend();
           }),
           stop: jasmine.createSpy('stop')
         },
-        mockResults;
+        executeOnStart, executeOnEnd, executeOnResult, mockResults;
+
+    beforeEach(function() {
+      executeOnStart = true;
+      executeOnEnd = true;
+      executeOnResult = true;
+    });
 
     mockSpeechRecognitionEngine(mockEngine);
 
@@ -31,6 +38,26 @@ describe('trascriptionService', function() {
 
     it('should return true if the speech recognition engine is not available', function() {
       expect(transcription.isAvailable()).toBe(true);
+    });
+
+    it('should notify the promise when the recognition starts', function() {
+      var _this = this;
+
+      executeOnResult = false;
+      executeOnEnd = false;
+
+      transcription.startTranscription().then(function(transcript) {
+      }, function(error) {
+        _this.fail('Promise should not be rejected.');
+      }, function(notification) {
+        expect(notification).toBe('started');
+      });
+
+      expect(mockEngine.start).toHaveBeenCalled();
+
+      mockEngine.onstart();
+
+      $rootScope.$digest();
     });
 
     it('should resolve the promise with null when the capture times-out', function() {

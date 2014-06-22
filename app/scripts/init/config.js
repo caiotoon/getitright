@@ -6,7 +6,8 @@ angular.module('getitright')
   .config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/enter', {
-      templateUrl: 'templates/enter.html'
+      templateUrl: 'templates/enter.html',
+      controller: 'InputCtrl'
     })
     .when('/record', {
       templateUrl: 'templates/record.html'
@@ -21,4 +22,3 @@ angular.module('getitright')
     // configure html5 to get links working on jsfiddle
     // $locationProvider.html5Mode(true);
   });
-

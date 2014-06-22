@@ -7,10 +7,11 @@ angular.module('getitright')
     $routeProvider
     .when('/enter', {
       templateUrl: 'templates/enter.html',
-      controller: 'InputCtrl'
+      controller: 'EnterCtrl'
     })
     .when('/record', {
-      templateUrl: 'templates/record.html'
+      templateUrl: 'templates/record.html',
+      controller: 'RecordCtrl'
     })
     .when('/result', {
       templateUrl: 'templates/result.html'

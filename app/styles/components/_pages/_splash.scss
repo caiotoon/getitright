@@ -6,6 +6,9 @@ header {
     height: 130px;
     // transition: all 0.2s ease-in;
   }
+  .about-link {
+    display: none;
+  }
   &.small {
     position: relative;
     width: 96%;
@@ -19,6 +22,9 @@ header {
       height: 60px;
       top: 20px;
       left: 20px;
+    }
+    .about-link {
+      display: block;
     }
   }
 }

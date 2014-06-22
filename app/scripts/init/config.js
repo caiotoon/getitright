@@ -22,7 +22,7 @@ angular.module('getitright')
     })
     .otherwise({
       templateUrl: 'templates/intro.html',
-      controller: 'IntroCtr'
+      controller: 'IntroCtrl'
     });
 
     // configure html5 to get links working on jsfiddle

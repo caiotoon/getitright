@@ -29,13 +29,15 @@ angular.module('getitright')
         isPhrase: function(text) {
           return text.indexOf(' ') > -1;
         }, compare: function(original, matching) {
-          var diff, str;
+          var diff, str, diffFunction;
 
           if (this.isPhrase(original)) {
-            diff = diffImpl.diffWords(original, matching);
+            diffFunction = diffImpl.diffWords;
           } else {
-            diff = diffImpl.diffChars(original, matching);
+            diffFunction = diffImpl.diffChars;
           }
+
+          diff = diffFunction(original, matching);
 
           str = '';
           diff.forEach(function formatPart(part) {

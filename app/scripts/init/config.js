@@ -20,6 +20,9 @@ angular.module('getitright')
     .when('/not-supported', {
       templateUrl: 'templates/not-supported.html'
     })
+    .when('/about', {
+      templateUrl: 'templates/about.html'
+    })
     .otherwise({
       templateUrl: 'templates/intro.html',
       controller: 'IntroCtrl'

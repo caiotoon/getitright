@@ -10,7 +10,7 @@ angular.module('getitright')
         $location.path('/enter');
       }
 
-      $scope.record = function() {debugger;
+      $scope.record = function() {
         if (!$scope.recording) {
           $scope.recording = true;
           timeout = $timeout(requestPermissionDelay, 1000);

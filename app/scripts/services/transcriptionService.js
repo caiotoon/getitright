@@ -31,6 +31,10 @@ angular.module('getitright')
       engineInstance.onerror = function(error) {
         deferredCapture && deferredCapture.reject(error);
       };
+
+      engineInstance.onstart = function() {
+        deferredCapture.notify('started');
+      };
     }
 
     this.isAvailable = function() {

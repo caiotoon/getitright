@@ -42,12 +42,10 @@
     <!-- endbuild -->
   </head>
   <body ng-app="getitright">
-    <header ng-controller="HeaderCtrl" ng-class="{small: $location.path() !== '/'}">
+    <header ng-controller="HeaderCtrl" ng-class="{small: $location.path().length > 1}">
       <img src="/images/logo-outline-2.svg"/>
     </header>
-    <main class="frame-content" ng-view>
-
-    </main>
+    <main class="frame-content" ng-view></main>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
@@ -67,7 +65,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-52075256-1');ga('send','pageview');
     </script>
     <!-- Built with love using Web Starter Kit -->
   </body>

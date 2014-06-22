@@ -1,4 +1,4 @@
-describe('inputController', function() {
+describe('enterController', function() {
   var ctrl, scope, $location;
 
   beforeEach(module('getitright'));
@@ -6,7 +6,7 @@ describe('inputController', function() {
   beforeEach(inject(function(_$location_, $controller, $rootScope) {
     scope = $rootScope.$new();
     $location = _$location_;
-    ctrl = $controller('InputCtrl', {$scope: scope});
+    ctrl = $controller('EnterCtrl', {$scope: scope});
     spyOn($location, 'path');
   }));
 
@@ -19,4 +19,12 @@ describe('inputController', function() {
     scope.usePhrase('      .,ab,     ');
     expect($location.path).toHaveBeenCalledWith('/record');
   });
+
+  it('should retrieve the current phrase form the localStorage', inject(function($controller, $rootScope, phrase) {
+    var scope = $rootScope.$new();
+
+    spyOn(phrase, 'get').andReturn('mocked phrase');
+    $controller('EnterCtrl', {$scope: scope});
+    expect(scope.userInputPhrase).toBe('mocked phrase');
+  }));
 });

@@ -25,6 +25,7 @@ var paths = {
         'test/vendor/angular.js',
         'test/vendor/angular-mocks.js',
         'test/vendor/*.js',
+        'test/helper/**/**.js',
         'app/scripts/vendor/**/*.js',
         'app/scripts/app.js',
         'app/scripts/services/**/*.js',

@@ -22,7 +22,7 @@ angular.module('getitright')
           $scope.countdown = 3;
           $scope.recording = true;
           phrase.setTranscription(null);
-          interval = $interval(countdown, 1000);
+          interval = $interval(countdown, 1000, 3);
         }
       };
 

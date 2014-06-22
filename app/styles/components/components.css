@@ -1883,6 +1883,10 @@ h4 {
     padding-bottom: 0;
   }
 }
+.medium.alert,
+h4.alert {
+  color: #ffcf0f;
+}
 
 .large,
 h3 {

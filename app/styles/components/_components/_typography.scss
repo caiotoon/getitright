@@ -26,6 +26,9 @@ ol {
 .medium,
 h4 {
   @include type--medium;
+  &.alert {
+    color: $colorYellow;
+  }
 }
 
 .large,

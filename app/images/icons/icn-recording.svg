@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-recording</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-470.000000, -433.000000)">
+            <g sketch:type="MSLayerGroup" transform="translate(472.000000, 435.000000)">
+                <g transform="translate(15.000000, 17.000000)"></g>
+                <g transform="translate(24.000000, 17.000000)" fill="#FFCF0F" sketch:type="MSShapeGroup">
+                    <g>
+                        <path d="M30.5165,14.785 C29.625,14.785 28.903,15.5065 28.903,16.398 L28.903,23.118 C28.903,30.2325 23.115,36.0215 15.9995,36.0215 C8.884,36.0215 3.0965,30.233 3.0965,23.118 L3.0965,16.398 C3.0965,15.507 2.375,14.785 1.483,14.785 C0.5925,14.785 -0.1295,15.5065 -0.1295,16.398 L-0.1295,23.118 C-0.1295,30.9125 5.428,37.433 12.7895,38.925 C12.7795,39.031 12.774,39.1385 12.774,39.247 L12.774,46.774 C12.774,48.5555 14.2185,50 15.9995,50 C17.7805,50 19.225,48.5555 19.225,46.774 L19.225,39.247 C19.225,39.1385 19.219,39.031 19.2095,38.925 C26.571,37.433 32.1285,30.9125 32.1285,23.118 L32.1285,16.398 C32.129,15.507 31.407,14.785 30.5165,14.785 L30.5165,14.785 Z"></path>
+                        <path d="M25.6775,9.6775 C25.6775,4.3325 21.3445,0 16,0 C10.6555,0 6.3225,4.3325 6.3225,9.6775 L6.3225,15.0535 L25.678,15.0535 L25.678,9.6775 L25.6775,9.6775 Z"></path>
+                        <path d="M16,32.7955 C21.3445,32.7955 25.6775,28.463 25.6775,23.1185 L25.6775,18.28 L6.3225,18.28 L6.3225,23.1185 C6.3225,28.463 10.6555,32.7955 16,32.7955 L16,32.7955 Z"></path>
+                    </g>
+                </g>
+                <circle stroke="#FFCF0F" stroke-width="4" sketch:type="MSShapeGroup" cx="40" cy="40" r="40"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

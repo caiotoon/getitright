@@ -3,4 +3,4 @@ to the way you pronounce the word, and offer suggestions when you are done.</h3>
 <h2>&ldquo;{{actualPhrase}}&rdquo;</h2>
 <h4 class="alert" style="visibility: {{errorMsg ? '' : 'hidden'}};">{{errorMsg}}</h4>
 
-<span ng-class="{'icon-container': !recording}" ng-click="!recording && record()"><div class="transmission"></div><img class="pause" ng-class="{active: !recording}" src="images/icons/icn-recording.svg" alt="Stop recording..." data-title="Record..."/></span>
+<span class="record-span" ng-class="{'icon-container': !recording}" ng-click="!recording && record()"><div class="transmission"></div><img class="pause" ng-class="{active: !recording}" src="images/icons/icn-recording.svg" alt="Stop recording..." data-title="Record..."/></span>

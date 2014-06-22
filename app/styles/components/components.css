@@ -2020,6 +2020,45 @@ li > p {
   padding: 1em 0 0 0;
 }
 
+.about-link {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 0;
+  padding-bottom: 0;
+  float: right;
+  margin: 14px 0 0 0;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  transition: color 0.2s ease-in;
+}
+.about-link:hover {
+  color: white;
+}
+
+a.about {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 0;
+  padding-bottom: 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  transition: color 0.2s ease-in;
+}
+a.about:hover {
+  color: white;
+}
+
 /**
 *
 * Button

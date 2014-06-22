@@ -38,6 +38,16 @@ input.large {
   @include input-text();
 }
 
+.pause {
+  margin: 2em 0 0 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in;
+  cursor: pointer;
+  &.active{
+    opacity: 1;
+  }
+}
+
 ::-webkit-input-placeholder {
    color: rgba(255,255,255,0.3);
    vertical-align: middle;

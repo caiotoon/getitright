@@ -2044,6 +2044,9 @@ li > p {
   color: #ffcf0f;
   transition: all 0.2s ease-in;
 }
+.submit:visited {
+  color: #ffcf0f;
+}
 .submit:hover {
   background: #ffcf0f;
   color: #e74c3c;

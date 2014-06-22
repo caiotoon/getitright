@@ -66,10 +66,13 @@
   font-weight: 500;
   color: $colorYellow;
   transition: all 0.2s ease-in;
-
+  &:visited {
+    color: $colorYellow;
+  }
   &:hover {
     background: $colorYellow;
     color: $colorRed;
     border: 3px solid $colorYellow;
   }
+
 }

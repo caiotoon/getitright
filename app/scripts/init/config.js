@@ -16,8 +16,12 @@ angular.module('getitright')
     .when('/result', {
       templateUrl: 'templates/result.html'
     })
+    .when('/not-supported', {
+      templateUrl: 'templates/not-supported.html'
+    })
     .otherwise({
-      templateUrl: 'templates/intro.html'
+      templateUrl: 'templates/intro.html',
+      controller: 'IntroCtr'
     });
 
     // configure html5 to get links working on jsfiddle

@@ -92,7 +92,7 @@ input.large {
 .resultcontainer {
   width: 50%;
   padding: 0.5em 2em 1.5em 2em;
-  margin: 2em auto 0;
+  margin: 2em auto;
   background: white;
   border-radius: 5px;
   color: #333;
@@ -100,17 +100,17 @@ input.large {
 
 
 ::-webkit-input-placeholder {
-   color: rgba(255,255,255,0.3);
+   color: rgba(255, 255, 255, .3);
    vertical-align: middle;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255,255,255,0.3);
+   color: rgba(255, 255, 255, .3);
    vertical-align: middle;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255,255,255,0.3);
+   color: rgba(255, 255, 255, .3);
    vertical-align: middle;
 }
 
@@ -119,4 +119,36 @@ input.large {
   1% { -webkit-transform:scale(1); opacity:0.75; }
   60% { opacity:0; -webkit-transform:scale(1.6); }
   100% { opacity:0; -webkit-transform:scale(1.8) }
+}
+
+.map-container {
+  width: 96%;
+  background: rgba(255, 255, 255, .1);
+  margin-top: 100px;
+  margin: 60px auto 2% auto;
+  padding: 1% 2% 2% 2%;
+}
+
+.map-placeholder {
+  height: 400px;
+}
+
+h4 {
+  text-align: center;
+  opacity: .8;
+  padding: 2%;
+}
+
+.arrow {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  margin: 5px auto 0 auto;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }

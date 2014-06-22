@@ -3,7 +3,7 @@ angular.module('getitright')
     diffProvider.setTemplates('<ins>%s</ins>', '<del>%s</del>', '%s');
   }])
 
-  .config(function($routeProvider, $locationProvider) {
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/enter', {
       templateUrl: 'templates/enter.html',
@@ -27,4 +27,8 @@ angular.module('getitright')
 
     // configure html5 to get links working on jsfiddle
     // $locationProvider.html5Mode(true);
-  });
+  }])
+
+  .run(['heartbeat', function(heartbeat) {
+    heartbeat.startBeating();
+  }]);

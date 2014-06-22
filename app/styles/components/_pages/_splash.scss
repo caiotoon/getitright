@@ -38,14 +38,55 @@ input.large {
   @include input-text();
 }
 
+.record-span {
+  position: relative;
+}
+
+.icon-container {
+  &:after{
+    content: 'Click to record...';
+    position: absolute;
+    top: -41px;
+    right: -111px;
+    background: $colorYellow;
+    color: $colorRed;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid $colorYellow;
+    border-bottom: 8px solid transparent;
+    top: -34px;
+    right: -17px;
+  }
+}
+
 .pause {
   margin: 2em 0 0 0;
-  opacity: 0.6;
+  opacity: 1;
   transition: opacity 0.2s ease-in;
   cursor: pointer;
-  &.active{
-    opacity: 1;
-  }
+  position: relative;
+}
+
+.transmission {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  top: -69px;
+  left: 0px;
+  border: 4px solid $colorYellow;
+  border-radius: 50%;
+  animation: transmission infinite ease-in-out 1.75s;
 }
 
 .resultcontainer {
@@ -71,4 +112,11 @@ input.large {
 ::-moz-placeholder {  /* Firefox 19+ */
    color: rgba(255,255,255,0.3);
    vertical-align: middle;
+}
+
+@-webkit-keyframes transmission {
+  0% { -webkit-transform:scale(1); opacity:0; }
+  1% { -webkit-transform:scale(1); opacity:0.75; }
+  60% { opacity:0; -webkit-transform:scale(1.6); }
+  100% { opacity:0; -webkit-transform:scale(1.8) }
 }

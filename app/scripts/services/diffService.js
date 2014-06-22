@@ -10,11 +10,6 @@
  * words not in the matching string will be shown in between <del> tags.
  */
 angular.module('getitright')
-
-  // our diff lib exposes this global funciton
-  .value('diffImpl', JsDiff)
-
-  // then we inject it here
   .provider('diff', function() {
     var _excessTpl, _missingTpl, _matchingTpl;
 
@@ -24,7 +19,7 @@ angular.module('getitright')
       _matchingTpl = matchingTpl;
     };
 
-    this.$get = ['diffImpl', function(diffImpl) {
+    this.$get = function() {
       return {
         isPhrase: function(text) {
           return text.indexOf(' ') > -1;
@@ -32,9 +27,9 @@ angular.module('getitright')
           var diff, str, diffFunction;
 
           if (this.isPhrase(original)) {
-            diffFunction = diffImpl.diffWords;
+            diffFunction = JsDiff.diffWords;
           } else {
-            diffFunction = diffImpl.diffChars;
+            diffFunction = JsDiff.diffChars;
           }
 
           diff = diffFunction(original, matching);
@@ -50,5 +45,5 @@ angular.module('getitright')
           return str;
         }
       };
-    }];
+    };
   });

@@ -47,7 +47,7 @@ var karma = require('gulp-karma');
 
 // Lint JavaScript
 gulp.task('jshint', function () {
-  return gulp.src(['app/scripts/**/*.js', '!app/scripts/vendor/**/*.js'])
+  return gulp.src(['app/scripts/**/*.js', '!app/scripts/vendor/**/*.js', '!app/scripts/services/speechRecognitionEngineProvider.js', , '!app/scripts/services/transcriptionService.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.jshint.reporter('fail'))

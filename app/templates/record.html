@@ -1,6 +1,5 @@
 <h3 class="large-heavy contained">Fantastic! You are about to say the word, heliocentric. We will listen
 to the way you pronounce the word, and offer suggestions when you are done.</h3>
 <h2>"{{actualPhrase}}"</h2>
-<h4 class="alert" style="visibility: {{countdown > 0 ? '' : 'hidden'}};">Recording in {{countdown}}...</h4>
-<!-- Add .active to the img tag to make the icon full opacity (100%) -->
-<span ng-click="toggleRecord()"><img class="pause active" src="images/icons/icn-pause.svg" alt="Stop recording..."/></span>
+<h4 class="alert" style="visibility: {{errorMsg ? '' : 'hidden'}};">{{errorMsg}}</h4>
+<span ng-click="!recording && record()"><img class="pause" ng-class="{active: !recording}" src="images/icons/icn-pause.svg" alt="Stop recording..."/></span>

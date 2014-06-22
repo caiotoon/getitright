@@ -14,7 +14,8 @@ angular.module('getitright')
       controller: 'RecordCtrl'
     })
     .when('/result', {
-      templateUrl: 'templates/result.html'
+      templateUrl: 'templates/result.html',
+      controller: 'ResultCtrl'
     })
     .when('/not-supported', {
       templateUrl: 'templates/not-supported.html'

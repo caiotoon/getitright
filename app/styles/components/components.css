@@ -1900,6 +1900,17 @@ h3 {
   }
 }
 
+.large-heavy {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.0000em;
+  /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+  font-weight: 500;
+}
+
 .xlarge,
 h2 {
   font-family: "Fira Sans", sans-serif;
@@ -3096,6 +3107,38 @@ header.small img {
 
 .frame-content {
   text-align: center;
+}
+
+input.large {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0 0 0;
+  color: #FFF;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.3);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.3);
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /**

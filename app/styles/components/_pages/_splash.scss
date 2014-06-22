@@ -22,8 +22,38 @@ header {
     }
   }
 }
-
 .frame-content {
   text-align: center;
   // padding: 10em 0 0 0;
+}
+
+input.large {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0 0 0;
+  color: #FFF;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  // make this a mixin in the typography section
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.3);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,0.3);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,0.3);
+}
+
+:-ms-input-placeholder {
+   color: rgba(255,255,255,0.3);
 }

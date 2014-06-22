@@ -32,6 +32,17 @@ h4 {
 h3 {
   @include type--large;
 }
+
+.large-heavy {
+  font-family: $fontHighlight;
+  font-size: $fontLarge;
+  font-weight: 300;
+  line-height: 1.0000em; /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+  font-weight: 500;
+}
+
 .xlarge,
 h2 {
   @include type--xlarge;

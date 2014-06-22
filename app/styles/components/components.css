@@ -3159,19 +3159,48 @@ input.large {
   outline: none;
 }
 
+.icon-container {
+  position: relative;
+}
+.icon-container:after {
+  content: 'Click to record...';
+  position: absolute;
+  top: 12px;
+  right: -111px;
+  background: #ffcf0f;
+  color: #e74c3c;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.icon-container:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #ffcf0f;
+  border-bottom: 8px solid transparent;
+  top: 20px;
+  right: -16px;
+}
+
 .pause {
   margin: 2em 0 0 0;
-  opacity: 0.6;
+  opacity: 1;
   transition: opacity 0.2s ease-in;
   cursor: pointer;
+  position: relative;
 }
 .pause.active {
   opacity: 1;
 }
-.pause:hover:before {
-  content: 'Hello';
+.pause:after {
+  content: attr(data-title);
   position: absolute;
-  display: block;
+  top: 0;
+  right: 0;
 }
 
 .resultcontainer {

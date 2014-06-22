@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Get It Right</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- iOS icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/touch/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Generic Icon -->
+    <link rel="shortcut icon" href="images/touch/touch-icon-57x57.png">
+
+    <!-- Chrome Add to Homescreen -->
+    <link rel="shortcut icon" sizes="196x196" href="images/touch/touch-icon-196x196.png">
+
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- build:css styles/components/main.min.css -->
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/components/components.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!-- Adding .small to the header makes the header small! -->
+    <header>
+      <img src="/images/logo-outline-2.svg"/>
+    </header>
+    <main class="frame-content">
+      <h3>Uh oh! The page you requested was not found.</h3>
+      <h3>Let's try that again, shall we?</h3>
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+    <!-- build:js scripts/app.min.js -->
+    <script src="scripts/vendor/diff.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/diffService.js"></script>
+    <script src="scripts/controllers/headerController.js"></script>
+    <script src="scripts/init/config.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>

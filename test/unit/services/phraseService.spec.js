@@ -20,11 +20,6 @@ describe('phraseProvider', function() {
     }));
   });
 
-  it('should save and restore the transcription message', function() {
-    phrase.setTranscription('I am the law!!');
-    epxect(phrase.getTranscription()).toBe('I am the law!!');
-  });
-
   describe('message handling', function() {
     beforeEach(inject(function(_phrase_) {
       phrase = _phrase_;
@@ -37,6 +32,17 @@ describe('phraseProvider', function() {
 
     it('prepare() should return a message without any punctuation', function() {
       expect(phrase.prepare(examplePhrase)).toBe('my original without modifications any');
+    });
+
+    it('should save and restore the transcription message', function() {
+      phrase.setTranscription('I am the law!!');
+      epxect(phrase.getTranscription()).toBe('I am the law!!');
+    });
+
+    it('should clear the transcription message after setting a new phrase', function() {
+      phrase.setTranscription('I am the law!!');
+      phrase.set('some new text');
+      expect(phrase.getTranscription()).toBeNull();
     });
   });
 });

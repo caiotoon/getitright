@@ -5,6 +5,7 @@ angular.module('getitright')
 
     this.set = function(phrase) {
       original = phrase;
+      transcription = null;
       window.localStorage.setItem(propertyName, original);
     };
 

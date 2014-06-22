@@ -3118,6 +3118,7 @@ input.large {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 2.5em;
+  line-height: 1.5em;
   font-weight: 500;
   letter-spacing: 0.02em;
   outline: none;
@@ -3125,20 +3126,19 @@ input.large {
 
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(255, 255, 255, 0.3);
-}
-
-:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
 }
 
 /**

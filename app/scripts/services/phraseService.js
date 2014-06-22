@@ -1,13 +1,23 @@
 angular.module('getitright')
   .service('phrase', function() {
-    var original;
+    var propertyName = 'userInputPhrase',
+      original, transcription;
 
     this.set = function(phrase) {
       original = phrase;
+      window.localStorage.setItem(propertyName, original);
     };
 
     this.get = function() {
       return original;
+    };
+
+    this.setTranscription = function(phrase) {
+      transcription = phrase;
+    };
+
+    this.getTranscription = function() {
+      return transcription;
     };
 
     this.prepare = function(original) {
@@ -18,4 +28,6 @@ angular.module('getitright')
           .toLowerCase() :
         original;
     };
+
+    this.set(window.localStorage[propertyName]);
   });

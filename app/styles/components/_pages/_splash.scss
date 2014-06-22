@@ -128,10 +128,10 @@ input.large {
 }
 
 .map-container {
-  width: 96%;
-  background: rgba(255, 255, 255, .1);
+  width: 100%;
+  background: #CC4435;
   margin-top: 100px;
-  margin: 60px auto 2% auto;
+  margin: 6em auto 0;
   padding: 1% 2% 2% 2%;
 }
 
@@ -139,22 +139,14 @@ input.large {
   height: 400px;
 }
 
-h4 {
-  text-align: center;
-  opacity: .8;
-  padding: 2%;
-}
-
 .arrow {
-  transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
   width: 40px;
   height: 40px;
-  border: 3px solid #fff;
-  border-top: 3px solid transparent;
-  border-right: 3px solid transparent;
-  margin: 5px auto 0 auto;
-  background: rgba(0, 0, 0, 0);
+  margin: 10px auto 0;
+  opacity: 0.6;
   cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  &:hover {
+    opacity: 1;
+  }
 }

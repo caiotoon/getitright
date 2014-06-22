@@ -31,10 +31,7 @@
     <!-- Chrome Add to Homescreen -->
     <link rel="shortcut icon" sizes="196x196" href="images/touch/touch-icon-196x196.png" />
 
-    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+    <script src="scripts/vendor/modernizr.custom.js"></script>
 
     <!-- build:css styles/components/main.min.css -->
     <link rel="stylesheet" href="styles/components/components.css" />
@@ -47,6 +44,7 @@
     <main class="frame-content" ng-view></main>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8OX08ueTuFo5Ueymzuxt_SeXta1_I0z4"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
     <!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>-->
@@ -62,6 +60,7 @@
     <script src="scripts/controllers/recordController.js"></script>
     <script src="scripts/controllers/resultController.js"></script>
     <script src="scripts/controllers/introController.js"></script>
+    <script src="scripts/directives/mapContainerDirective.js"></script>
     <script src="scripts/init/config.js"></script>
     <!-- endbuild -->
 

@@ -910,11 +910,12 @@ pre {
   padding: 0 0 26px;
 }
 .highlight-module--inline .highlight-module__title {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -971,11 +972,12 @@ pre {
 }
 
 .editorial-header__excerpt {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-family: "Fira Sans", sans-serif;
 }
@@ -1126,11 +1128,12 @@ pre {
 }
 
 .in-this-guide__title {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-family: "Fira Sans", sans-serif;
   margin-bottom: 26px;
@@ -1283,11 +1286,12 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .quote__content {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -1394,11 +1398,12 @@ pre {
 }
 
 .article-nav-count {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-weight: 700;
 }
@@ -1499,11 +1504,12 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .toc__title {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -1875,11 +1881,12 @@ h4 {
 @media only screen and (min-width: 800px) {
   .medium,
   h4 {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -1890,11 +1897,12 @@ h4.alert {
 
 .large,
 h3 {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -2495,11 +2503,12 @@ table th {
 }
 @media only screen and (min-width: 800px) {
   table th {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }

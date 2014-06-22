@@ -231,10 +231,11 @@
   }
 
   @mixin rule--medium {
+    font-family: $fontHighlight;
     font-size: $fontMedium;
-    font-weight: 300;
-    line-height: 1.3000em; /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em; /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 

@@ -7,7 +7,7 @@ angular.module('getitright')
         data.id = uid;
       }
 
-      return $http.post('/api/heartbeat', data).then(function(response) {
+      return $http.get('/server/api/heartbeat', data).then(function(response) {
         var id = response.data && response.data.uid;
 
         if (id) {
@@ -19,7 +19,7 @@ angular.module('getitright')
     };
 
     this.loadCoordinates = function() {
-      $http.get('/api/active-users').then(function(response) {
+      $http.get('/server/api/active-users').then(function(response) {
         if (response.data) {
           return response.data;
         } else {

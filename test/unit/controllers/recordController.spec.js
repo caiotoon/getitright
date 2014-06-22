@@ -1,7 +1,7 @@
 describe('recordController', function() {
   var MOCKED_PHRASE = 'mocked phrase',
     INTERVAL = 1000,
-    $location, $rootScope, $controller, $interval, phrase,
+    $location, $rootScope, $controller, $timeout, phrase,
     transcription, transcriptionDeferred,
     ctrl, scope;
 
@@ -22,12 +22,12 @@ describe('recordController', function() {
     });
   }));
 
-  beforeEach(inject(function(_$location_, _phrase_, _$rootScope_, _$controller_, _$interval_, _transcription_) {
+  beforeEach(inject(function(_$location_, _phrase_, _$rootScope_, _$controller_, _$timeout_, _transcription_) {
     transcription = _transcription_;
     $controller = _$controller_;
     $rootScope = _$rootScope_;
     $location = _$location_;
-    $interval = _$interval_;
+    $timeout = _$timeout_;
     phrase = _phrase_;
 
     spyOn($location, 'path');
@@ -43,7 +43,6 @@ describe('recordController', function() {
     beforeEach(function() {
       phrase.set(MOCKED_PHRASE);
       createCtrl();
-      jasmine.Clock.useMock();
     });
 
     it('should not navigate back to /enter if there is a phrase', function() {
@@ -51,47 +50,35 @@ describe('recordController', function() {
     });
 
     it('should clear the transcription message when start recording', function() {
-      scope.toggleRecord();
+      scope.record();
       expect(phrase.setTranscription).toHaveBeenCalledWith(null);
     });
 
-    it('should timeout 1 sec and ask for transcription', function() {
-      scope.toggleRecord();
-      expect(transcription.startTranscription).not.toHaveBeenCalled();
-      $interval.flush(INTERVAL);
-      expect(transcription.startTranscription).toHaveBeenCalled();
+    it('should toggle a requesting permission error msg after a few seconds without notification', function() {
+      scope.record();
+      $timeout.flush(INTERVAL);
+      expect(scope.errorMsg).toBe('Requesting permission...');
     });
 
-    describe('when toggling off the record', function() {
-      it('should cancel the countdown if recordToggle gets called', function() {
-        spyOn($interval, 'cancel');
+    it('should not create error msg if mic started already', function() {
+      scope.record();
+      transcriptionDeferred.notify('started');
+      $rootScope.$apply();
+      $timeout.flush(INTERVAL);
+      expect(scope.errorMsg).not.toBe('Requesting permission...');
+    });
 
-        scope.toggleRecord();
-        expect(scope.countdown).toBe(3);
-        $interval.flush(INTERVAL);
-        expect(scope.countdown).toBe(2);
-        scope.toggleRecord();
-        expect($interval.cancel).toHaveBeenCalled();
-      });
-
-      it('should abort the transcription', function() {
-        scope.toggleRecord();
-        $interval.flush(INTERVAL);
-        scope.toggleRecord();
-        expect(transcription.abortTranscription).toHaveBeenCalled();
-      });
-
-      it('should NOT abort the transcription if it has not been started', function() {
-        scope.toggleRecord();
-        scope.toggleRecord();
-        expect(transcription.abortTranscription).not.toHaveBeenCalled();
-      });
+    it('should remove requesting permission flag after start notification', function() {
+      scope.record();
+      scope.errorMsg = 'sdfasdf';
+      transcriptionDeferred.notify('started');
+      $rootScope.$apply();
+      scope.errorMsg = null;
     });
 
     describe('upon transcription', function() {
       function startRecording() {
-        scope.toggleRecord();
-        $interval.flush(INTERVAL);
+        scope.record();
       }
 
       function transcribe(value, reject) {
@@ -100,6 +87,13 @@ describe('recordController', function() {
       }
 
       beforeEach(startRecording);
+
+      it('should set a voiceRecording flag after start notification', function() {
+        expect(scope.voiceRecording).toBeUndefined();
+        transcriptionDeferred.notify('started');
+        $rootScope.$apply();
+        expect(scope.voiceRecording).toBe(true);
+      });
 
       it('should set a recording flag', function() {
         expect(scope.recording).toBe(true);

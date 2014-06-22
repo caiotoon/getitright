@@ -23,7 +23,8 @@ angular.module('getitright')
       return {
         isPhrase: function(text) {
           return text.indexOf(' ') > -1;
-        }, compare: function(original, matching) {
+        },
+        compare: function(original, matching) {
           var diff, str, diffFunction;
 
           if (this.isPhrase(original)) {

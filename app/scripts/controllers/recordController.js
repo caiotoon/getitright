@@ -1,7 +1,8 @@
 angular.module('getitright')
-  .controller('RecordCtrl', ['$scope', '$location', '$interval', 'phrase', 'transcription',
-    function($scope, $location, $interval, phrase, transcription) {
-      var interval, transcriptionPromise;
+  .controller('RecordCtrl', ['$scope', '$location', '$timeout', 'phrase', 'transcription',
+    function($scope, $location, $timeout, phrase, transcription) {
+      var REQUEST_PERMISSION_MSG = 'Requesting permission...',
+        timeout, transcriptionPromise;
 
       $scope.actualPhrase = phrase.get();
 
@@ -9,44 +10,50 @@ angular.module('getitright')
         $location.path('/enter');
       }
 
-      $scope.toggleRecord = function() {
-        if ($scope.recording) {
-          clearCountdown();
-          $scope.recording = false;
-
-          if (transcriptionPromise) {
-            transcription.abortTranscription();
-            transcriptionPromise = null;
-          }
-        } else {
-          $scope.countdown = 3;
+      $scope.record = function() {
+        if (!$scope.recording) {
           $scope.recording = true;
-          phrase.setTranscription(null);
-          interval = $interval(countdown, 1000, 3);
+          timeout = $timeout(requestPermissionDelay, 1000);
+          requestTranscript();
         }
       };
 
-      function countdown() {
-        $scope.countdown--;
+      function requestPermissionDelay() {
+        $scope.errorMsg = REQUEST_PERMISSION_MSG;
+      }
 
-        if ($scope.countdown === 2) {
-          transcriptionPromise = transcription.startTranscription().then(function(message) {
-            $scope.recording = false;
-            phrase.setTranscription(message);
-            $location.path('/result');
-          }, function(error) {
-            $scope.recording = false;
-            $scope.errorMsg = error;
-          });
-        }
-
-        if ($scope.countdown === 0) {
-          clearCountdown();
+      function clearPermissionRequestDelay() {
+        if (timeout) {
+          $timeout.cancel(timeout);
+          timeout = null;
         }
       }
 
-      function clearCountdown() {
-        $interval.cancel(interval);
-        interval = null;
+      function requestTranscript() {
+        phrase.setTranscription(null);
+        transcription.startTranscription().then(
+          function(transcript) {
+            cancelRecording();
+            phrase.setTranscription(transcript);
+            $location.path('/result');
+          }, function(error) {
+            cancelRecording();
+            $scope.errorMsg = error;
+          }, function(notification) {
+            if (notification === 'started') {
+              $scope.errorMsg = null;
+              $scope.voiceRecording = true;
+              clearPermissionRequestDelay();
+            }
+          }
+        );
+      }
+
+      function cancelRecording() {
+        $scope.recording = false;
+        $scope.voiceRecording = false;
+        $scope.errorMsg = null;
+
+        clearPermissionRequestDelay();
       }
   }]);

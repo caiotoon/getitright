@@ -3205,8 +3205,8 @@ input.large {
   left: 0px;
   border: 4px solid #ffcf0f;
   border-radius: 50%;
-  -webkit-animation: transmission infinite ease-in-out 2s;
-  animation: transmission infinite ease-in-out 2s;
+  -webkit-animation: transmission infinite ease-in-out 1.75s;
+  animation: transmission infinite ease-in-out 1.75s;
 }
 
 .resultcontainer {

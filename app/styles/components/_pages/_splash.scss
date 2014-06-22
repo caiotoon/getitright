@@ -43,10 +43,18 @@ input.large {
   opacity: 0.6;
   transition: opacity 0.2s ease-in;
   cursor: pointer;
+  position: relative;
   &.active{
     opacity: 1;
   }
+  &:after {
+    content: attr(data-title);
+    position: absolute;
+    top: 0
+    right: 0;
+  }
 }
+
 
 .resultcontainer {
   width: 50%;

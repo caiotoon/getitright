@@ -41,12 +41,14 @@
     <link rel="stylesheet" href="styles/components/components.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="getitright">
-    <header ng-controller="HeaderCtrl" ng-class="{small: $location.path() !== '/'}">
+  <body>
+    <!-- Adding .small to the header makes the header small! -->
+    <header>
       <img src="/images/logo-outline-2.svg"/>
     </header>
-    <main class="frame-content" ng-view>
-
+    <main class="frame-content">
+      <h3>Uh oh! The page you requested was not found.</h3>
+      <h3>Let's try that again, shall we?</h3>
     </main>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>

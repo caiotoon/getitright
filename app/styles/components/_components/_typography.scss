@@ -26,12 +26,31 @@ ol {
 .medium,
 h4 {
   @include type--medium;
+  &.alert {
+    color: $colorYellow;
+  }
 }
 
 .large,
 h3 {
   @include type--large;
 }
+
+.large-heavy {
+  font-family: $fontHighlight;
+  font-size: $fontLarge;
+  font-weight: 300;
+  line-height: 1.0000em; /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+  font-weight: 500;
+  &.contained {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.25em;
+  }
+}
+
 .xlarge,
 h2 {
   @include type--xlarge;
@@ -53,4 +72,16 @@ li > p {
 
 .subheadline {
   @include type--base-flat;
+}
+
+@mixin input-text() {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+.resultcontainer p {
+  padding: 1em 0 0 0
 }

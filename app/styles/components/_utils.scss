@@ -231,10 +231,11 @@
   }
 
   @mixin rule--medium {
+    font-family: $fontHighlight;
     font-size: $fontMedium;
-    font-weight: 300;
-    line-height: 1.3000em; /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em; /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 
@@ -250,8 +251,9 @@
   @mixin rule--xlarge {
     font-family: $fontHighlight;
     font-size: $fontXLarge;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em; /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -261,6 +263,7 @@
     font-size: $fontXXLarge;
     font-weight: 300;
     line-height: 1.1471em; /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }

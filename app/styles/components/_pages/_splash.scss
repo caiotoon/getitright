@@ -22,8 +22,53 @@ header {
     }
   }
 }
-
 .frame-content {
   text-align: center;
   // padding: 10em 0 0 0;
+}
+
+input.large {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0 0 0;
+  color: #FFF;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  @include input-text();
+}
+
+.pause {
+  margin: 2em 0 0 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in;
+  cursor: pointer;
+  &.active{
+    opacity: 1;
+  }
+}
+
+.resultcontainer {
+  width: 50%;
+  padding: 0.5em 2em 1.5em 2em;
+  margin: 2em auto 0;
+  background: white;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.3);
+   vertical-align: middle;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,0.3);
+   vertical-align: middle;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,0.3);
+   vertical-align: middle;
 }

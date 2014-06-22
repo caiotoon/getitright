@@ -764,6 +764,7 @@ pre {
   font-weight: 300;
   line-height: 1.1471em;
   /* 78px */
+  letter-spacing: -0.02em;
   padding-top: 0.3824em;
   padding-bottom: 0;
   padding-top: 26px;
@@ -783,9 +784,10 @@ pre {
   .highlight-module__title {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -797,6 +799,7 @@ pre {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -907,11 +910,12 @@ pre {
   padding: 0 0 26px;
 }
 .highlight-module--inline .highlight-module__title {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -968,11 +972,12 @@ pre {
 }
 
 .editorial-header__excerpt {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-family: "Fira Sans", sans-serif;
 }
@@ -984,9 +989,10 @@ pre {
 .editorial-header__subtitle {
   font-family: "Fira Sans", sans-serif;
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2381em;
   /* 52px */
+  letter-spacing: -0.01em;
   padding-top: 0.6190em;
   padding-bottom: 0;
   padding-top: 0;
@@ -999,6 +1005,7 @@ pre {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -1088,9 +1095,10 @@ pre {
   .related-guides__title {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -1120,11 +1128,12 @@ pre {
 }
 
 .in-this-guide__title {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-family: "Fira Sans", sans-serif;
   margin-bottom: 26px;
@@ -1277,11 +1286,12 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .quote__content {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -1388,11 +1398,12 @@ pre {
 }
 
 .article-nav-count {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
   font-weight: 700;
 }
@@ -1493,11 +1504,12 @@ pre {
 }
 @media only screen and (min-width: 800px) {
   .toc__title {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -1869,22 +1881,28 @@ h4 {
 @media only screen and (min-width: 800px) {
   .medium,
   h4 {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
+}
+.medium.alert,
+h4.alert {
+  color: #ffcf0f;
 }
 
 .large,
 h3 {
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 1.3000em;
-  /* 26px */
-  padding-top: 1.3000em;
+  font-weight: 500;
+  line-height: 0.80em;
+  /* 13px */
+  padding-top: 0.80em;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 800px) {
@@ -1898,6 +1916,22 @@ h3 {
     padding-top: 1.0000em;
     padding-bottom: 0;
   }
+}
+
+.large-heavy {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.0000em;
+  /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+  font-weight: 500;
+}
+.large-heavy.contained {
+  width: 65%;
+  margin: 0 auto;
+  line-height: 1.25em;
 }
 
 .xlarge,
@@ -1915,9 +1949,10 @@ h2 {
   h2 {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -1927,9 +1962,10 @@ h2 {
 h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2381em;
   /* 52px */
+  letter-spacing: -0.01em;
   padding-top: 0.6190em;
   padding-bottom: 0;
 }
@@ -1941,6 +1977,7 @@ h1 {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -1952,6 +1989,7 @@ h1 {
   font-weight: 300;
   line-height: 1.1471em;
   /* 78px */
+  letter-spacing: -0.02em;
   padding-top: 0.3824em;
   padding-bottom: 0;
 }
@@ -1976,6 +2014,10 @@ li > p {
   line-height: 1.6250em;
   /* 26px */
   padding-bottom: 30px;
+}
+
+.resultcontainer p {
+  padding: 1em 0 0 0;
 }
 
 /**
@@ -2032,6 +2074,9 @@ li > p {
   font-weight: 500;
   color: #ffcf0f;
   transition: all 0.2s ease-in;
+}
+.submit:visited {
+  color: #ffcf0f;
 }
 .submit:hover {
   background: #ffcf0f;
@@ -2462,11 +2507,12 @@ table th {
 }
 @media only screen and (min-width: 800px) {
   table th {
+    font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.3000em;
-    /* 26px */
-    padding-top: 1.3000em;
+    font-weight: 500;
+    line-height: 0.80em;
+    /* 13px */
+    padding-top: 0.80em;
     padding-bottom: 0;
   }
 }
@@ -3096,6 +3142,57 @@ header.small img {
 
 .frame-content {
   text-align: center;
+}
+
+input.large {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0 0 0;
+  color: #FFF;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 2.5em;
+  line-height: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+.pause {
+  margin: 2em 0 0 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in;
+  cursor: pointer;
+}
+.pause.active {
+  opacity: 1;
+}
+
+.resultcontainer {
+  width: 50%;
+  padding: 0.5em 2em 1.5em 2em;
+  margin: 2em auto 0;
+  background: white;
+  border-radius: 5px;
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
 }
 
 /**

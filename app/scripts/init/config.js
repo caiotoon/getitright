@@ -5,14 +5,20 @@ angular.module('getitright')
 
   .config(function($routeProvider, $locationProvider) {
     $routeProvider
-     .when('/enter', {
+    .when('/enter', {
       templateUrl: 'templates/enter.html'
+    })
+    .when('/record', {
+      templateUrl: 'templates/record.html'
+    })
+    .when('/result', {
+      templateUrl: 'templates/result.html'
     })
     .otherwise({
       templateUrl: 'templates/intro.html'
     });
 
     // configure html5 to get links working on jsfiddle
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
   });
 

@@ -41,6 +41,11 @@ h3 {
   padding-top: 1.0000em;
   padding-bottom: 0;
   font-weight: 500;
+  &.contained {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.25em;
+  }
 }
 
 .xlarge,

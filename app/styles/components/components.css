@@ -764,6 +764,7 @@ pre {
   font-weight: 300;
   line-height: 1.1471em;
   /* 78px */
+  letter-spacing: -0.02em;
   padding-top: 0.3824em;
   padding-bottom: 0;
   padding-top: 26px;
@@ -783,9 +784,10 @@ pre {
   .highlight-module__title {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -797,6 +799,7 @@ pre {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -984,9 +987,10 @@ pre {
 .editorial-header__subtitle {
   font-family: "Fira Sans", sans-serif;
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2381em;
   /* 52px */
+  letter-spacing: -0.01em;
   padding-top: 0.6190em;
   padding-bottom: 0;
   padding-top: 0;
@@ -999,6 +1003,7 @@ pre {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -1088,9 +1093,10 @@ pre {
   .related-guides__title {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -1910,6 +1916,11 @@ h3 {
   padding-bottom: 0;
   font-weight: 500;
 }
+.large-heavy.contained {
+  width: 65%;
+  margin: 0 auto;
+  line-height: 1.25em;
+}
 
 .xlarge,
 h2 {
@@ -1926,9 +1937,10 @@ h2 {
   h2 {
     font-family: "Fira Sans", sans-serif;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2381em;
     /* 52px */
+    letter-spacing: -0.01em;
     padding-top: 0.6190em;
     padding-bottom: 0;
   }
@@ -1938,9 +1950,10 @@ h2 {
 h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2381em;
   /* 52px */
+  letter-spacing: -0.01em;
   padding-top: 0.6190em;
   padding-bottom: 0;
 }
@@ -1952,6 +1965,7 @@ h1 {
     font-weight: 300;
     line-height: 1.1471em;
     /* 78px */
+    letter-spacing: -0.02em;
     padding-top: 0.3824em;
     padding-bottom: 0;
   }
@@ -1963,6 +1977,7 @@ h1 {
   font-weight: 300;
   line-height: 1.1471em;
   /* 78px */
+  letter-spacing: -0.02em;
   padding-top: 0.3824em;
   padding-bottom: 0;
 }

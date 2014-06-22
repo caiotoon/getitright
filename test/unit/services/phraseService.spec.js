@@ -36,7 +36,7 @@ describe('phraseProvider', function() {
 
     it('should save and restore the transcription message', function() {
       phrase.setTranscription('I am the law!!');
-      epxect(phrase.getTranscription()).toBe('I am the law!!');
+      expect(phrase.getTranscription()).toBe('I am the law!!');
     });
 
     it('should clear the transcription message after setting a new phrase', function() {

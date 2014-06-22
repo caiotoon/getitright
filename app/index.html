@@ -43,7 +43,7 @@
   </head>
   <body ng-app="getitright">
     <!-- Adding .small to the header makes the header small! -->
-    <header class="small">
+    <header ng-controller="HeaderCtrl" ng-class="{small: $location.path() !== '/'}">
       <img src="/images/logo-outline-2.svg"/>
     </header>
     <main class="frame-content" ng-view>
@@ -57,6 +57,7 @@
     <script src="scripts/vendor/diff.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/services/diffService.js"></script>
+    <script src="scripts/controllers/headerController.js"></script>
     <script src="scripts/init/config.js"></script>
     <!-- endbuild -->
 

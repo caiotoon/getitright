@@ -2016,6 +2016,10 @@ li > p {
   padding-bottom: 30px;
 }
 
+.resultcontainer p {
+  padding: 1em 0 0 0;
+}
+
 /**
 *
 * Button
@@ -3163,6 +3167,15 @@ input.large {
 }
 .pause.active {
   opacity: 1;
+}
+
+.resultcontainer {
+  width: 50%;
+  padding: 0.5em 2em 1.5em 2em;
+  margin: 2em auto 0;
+  background: white;
+  border-radius: 5px;
+  color: #333;
 }
 
 ::-webkit-input-placeholder {

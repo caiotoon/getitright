@@ -61,7 +61,7 @@ input.large {
     border-right: 8px solid $colorYellow;
     border-bottom: 8px solid transparent;
     top: 20px;
-    right: -16px;
+    right: -17px;
   }
 }
 
@@ -71,18 +71,20 @@ input.large {
   transition: opacity 0.2s ease-in;
   cursor: pointer;
   position: relative;
-  &.active{
-    opacity: 1;
-    // add animation here
-  }
-  &:after {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
 
+.transmission {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  top: -15px;
+  left: 0px;
+  border: 4px solid white;
+  border-radius: 50%;
+  animation: transmission infinite ease-in-out 2s;
+}
 
 .resultcontainer {
   width: 50%;
@@ -108,3 +110,7 @@ input.large {
    color: rgba(255,255,255,0.3);
    vertical-align: middle;
 }
+
+//@-webkit-keyframes NAME-YOUR-ANIMATION 
+//webkit-keyframes transmission{
+//  0%{-webkit-transform:scale(0.1);opacity:0}1%{-webkit-transform:scale(0.1);opacity:0.6}60%{opacity:0;-webkit-transform:scale(1)}100%{opacity:0;-webkit-transform:scale(1)}}
